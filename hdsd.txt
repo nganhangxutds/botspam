@@ -1,0 +1,4 @@
+unzip scan.zip
+cd scan
+chmod 777 *
+bash zmap.sh
